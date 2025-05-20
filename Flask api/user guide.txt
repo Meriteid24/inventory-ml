@@ -1,0 +1,11 @@
+
+ML Prediction System (Flask API)
+ •Navigate to the Flask ML 
+   cd>> "your directory"
+ •Install its requirements:
+  pip install -r requirements.txt
+ •Train the model (if not already trained):
+    python train.py
+ •After running the django app.
+ •Start the Flask server:
+   python app.py

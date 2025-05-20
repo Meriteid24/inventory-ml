@@ -1,0 +1,11 @@
+flask==2.0.1
+pandas==1.5.3 
+numpy==1.24.0 
+scikit-learn==1.0.2  
+joblib==1.2.0
+beautifulsoup4==4.9.3
+requests==2.26.0
+schedule==1.1.0
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.12.2
+rapidfuzz==1.8.1
