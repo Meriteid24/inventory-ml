@@ -1,0 +1,159 @@
+/* Dashboard Layout */
+.dashboard-container {
+  padding: 2rem;
+  margin-left: 280px; /* Match sidebar width */
+}
+
+.dashboard-header {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e0e6ea;
+}
+
+.dashboard-flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.chart-card {
+  flex: 2;
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.prediction-card {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Prediction Items */
+.prediction-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.prediction-item:last-child {
+  border-bottom: none;
+}
+
+.prediction-item h5 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.prediction-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.prediction-value {
+  font-weight: 600;
+}
+
+.suggested-order {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-huge {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Activity Section */
+.activity-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.activity-column {
+  flex: 1;
+}
+
+.activity-title {
+  color: #4e6570;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #4e6570;
+  margin-bottom: 1.5rem;
+}
+
+.activity-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-details h5 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.activity-details small {
+  color: #7f8c8d;
+}
+
+.amount {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .dashboard-flex {
+      flex-direction: column;
+  }
+  
+  .activity-section {
+      flex-direction: column;
+  }
+  
+  .action-buttons {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+      margin-left: 0;
+      padding: 1rem;
+  }
+}
